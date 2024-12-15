@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(layout="wide")
 
@@ -25,9 +26,36 @@ with col2:
 
     While working together, we can all broaden our understanding and fuel the shifts that matter most.\n
     If you have ideas, improvements, or new feature suggestions, I’d love to hear from you! 
-
-    
     """
     st.info(content)
 
+content2 = """
+    Here are a few of my completed projects:
+    """
+st.header(content2)
+
+df = pd.read_csv('data.csv', sep=';')  # read the csv file
+# st.table(df)
+
+col3, col4 = st.columns(2)
+with col3:
+    for i, row in df[:10].iterrows():
+        st.subheader(row['title'])
+        st.write(row['description'])
+        st.image("images/" + row['image'])
+
+with col4:
+    for i, row in df[10:20].iterrows():
+        st.subheader(row['title'])
+        st.write(row['description'])
+        st.image("images/" + row['image'])
+
+content3 = """
+    Here are some of the ideas I have in mind for future projects:
+    """
+st.header(content3)
+for i, row in df[20:].iterrows():
+    st.subheader(row['title'])
+    st.write(row['description'])
+    # st.image("images/" + row['image'])
 
