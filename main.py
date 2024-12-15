@@ -35,7 +35,7 @@ content2 = """
     """
 st.header(content2)
 
-df = pd.read_csv('data.csv', sep=';')  # read the csv file
+df = pd.read_csv('portfolio_data.csv', sep=';')  # read the csv file
 # st.table(df)
 
 col3, empty_col, col4 = st.columns([1.5, 0.1, 1.5])
