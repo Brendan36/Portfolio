@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from streamlit import empty
 
 st.set_page_config(layout="wide")
 
@@ -37,18 +38,21 @@ st.header(content2)
 df = pd.read_csv('data.csv', sep=';')  # read the csv file
 # st.table(df)
 
-col3, col4 = st.columns(2)
+col3, empty_col, col4 = st.columns([1.5, 0.1, 1.5])
 with col3:
     for i, row in df[:10].iterrows():
         st.subheader(row['title'])
         st.write(row['description'])
         st.image("images/" + row['image'])
+        st.write(f"[Source Code]({row['url']})")
 
 with col4:
     for i, row in df[10:20].iterrows():
         st.subheader(row['title'])
         st.write(row['description'])
         st.image("images/" + row['image'])
+        st.write(f"[Source Code]({row['url']})")
+
 
 content3 = """
     Here are some of the ideas I have in mind for future projects:
