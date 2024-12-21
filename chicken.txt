@@ -1,3 +1,5 @@
+Chicken
+
 The amount of food 5,000 chickens would need to consume depends on several factors, including:
 
 Age of the Chickens: Younger chickens consume less feed compared to older, fully-grown chickens.
@@ -6,42 +8,17 @@ Feed Conversion Ratio (FCR): This indicates how efficiently chickens convert fee
 Time to Slaughter: Typically, broilers are slaughtered at around 6-8 weeks of age.
 For broilers (meat chickens), the general guideline is as follows:
 
-Daily feed intake: On average, a broiler consumes about 120–150 grams (0.12–0.15 kg) of feed per day as it grows.
+Daily feed intake: On average, a broiler consumes about 120–150 grams (0.12 – 0.15 kg) of feed per day as it grows.
 Approximate Calculation:
 Duration to slaughter: ~6 weeks (42 days).
 Average daily feed: ~0.13 kg per chicken.
 Total feed per chicken:
-0.13
- 
-kg/day
-×
-42
- 
-days
-=
-5.46
- 
-kg
-0.13kg/day×42days=5.46kg.
+0.13kg / day × 42 days = 5.46kg
+0.13kg / day × 42days = 5.46kg.
 For 5,000 chickens:
 
-5.46
- 
-kg/chicken
-×
-5
-,
-000
- 
-chickens
-=
-27
-,
-300
- 
-kg of feed
-.
-5.46kg/chicken×5,000chickens=27,300kg of feed.
+5.46kg/chicken × 5,000 chickens = 27,300kg of feed.
+
 Total Feed Requirement:
 You would need approximately 27,300 kg (27.3 metric tons) of feed to raise 5,000 broiler chickens to slaughter weight.
 
