@@ -26,7 +26,18 @@ with col2:
     —but that can only happen when people put them to use.\n
 
     While working together, we can all broaden our understanding and fuel the shifts that matter most.\n
-    If you have ideas, improvements, or new feature suggestions, I’d love to hear from you! 
+    If you have ideas, improvements, or new feature suggestions, I’d love to hear from you!\n
+    
+    Let’s create a better world together!\n
+    
+    I intend to work with you to build TRUST, an application that:\n
+
+    1. Debunks the correlation between "sustainability" and the actual impact of the commercialization of natural resources on the world.\n
+    2. Improves our understanding of the success stories of collectives of individuals who have extensively researched viable alternatives.\n
+    3. Provides insights into the financial results of industries involved and by virtue, their impact while shining light on the environmental cost... i.e. 3000 people could have eaten for a week by the food that given to 5000 chickens which were fed to 3000 people in 1 day \n
+    4. 
+    10. Demonstrates the power of collective action to change the world.\n
+    
     """
     st.info(content)
 
@@ -61,5 +72,5 @@ st.header(content3)
 for i, row in df[20:].iterrows():
     st.subheader(row['title'])
     st.write(row['description'])
-    # st.image("images/" + row['image'])
+    st.image("images/" + row['image'])
 
