@@ -41,14 +41,14 @@ blurb = """
     
     Let’s create a better world together!\n
     
-    I intend to work with you to build TRUST, an application that:\n
+    I intend to work with you to build HOPE, an application that:\n
     
-    1. Debunks the correlation between "sustainability" and the actual impact of the commercialization of natural resources on the world.\n
+    1. Debunks the correlation between "sustainability" and the actual impact of the continuous commercialization of natural resources on the world.\n
     2. Improves our understanding of the success stories of collectives and individuals who have extensively researched viable alternatives and have them implemented.\n
     3. Provides insights into the financial results of industries involved and by virtue, their impact while shining light on the environmental cost... \n
     4. Enables peer-to-peer collaboration and resource pooling to empower a new sustainable industry for the future. \n
     5. Demonstrates the power of collective action so we can easily quantify our collective impact and see which changes we are making in our world.\n
-        >>> **WE CANNOT RELY ON OUR CURRENT CAPITALIST DRIVEN WORLD INDUSTRIES TO DO RIGHT BY US - it's simply not profitable for them.**\n
+    **WE CANNOT RELY ON OUR CURRENT CAPITALIST DRIVEN GLOBAL INDUSTRIES TO DO RIGHT BY US - it's simply not profitable for them.**\n
 
     """
 st.write(blurb)
@@ -100,7 +100,7 @@ with col4:
 
 
 content2 = """
-    Here are a few of my completed projects:
+    Here are a few of my current projects:
     """
 st.header(content2)
 

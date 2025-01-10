@@ -53,12 +53,13 @@ Allow users to set up a trading strategy and let the app execute the strategy on
 Allow users to monitor and analyze their trading performance.
 With a focus on highly profitable businesses with alternative practices and projects which are not only transparent 
 about their sustainability, but also transparent about their economic impact
-### *TRUST*
+### *HOPE*
 Purpose:\
-A web app that exposes the conflicts of interest which exist between regulatory bodies and industries. 
-The app will include visualizations of the correlation between enabling sustainability and the economic impact while
-moving away from the current unsustainable universally accepted commercialization and exploitation of the world's 
-natural resources.
+The app will include visualizations of the correlation between enabling sustainability and the economic impact 
+while moving away from the current universally accepted unsustainable commercialization and exploitation of the world's natural resources. 
+This web app will help us to recognize the "trustworthy" companies by exposing the conflicts of interest which exist 
+between regulatory bodies and industries. 
+The main objective being to re-establish hope (in those who are struggling to find any) for a better future.
 ### *How does my pet see the world*
 Purpose:\
 For those who are curious about how a pet sees the world, the app applies a grayscale filter to images to create a simulation of how a pet might see the world.
