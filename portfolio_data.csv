@@ -1,7 +1,7 @@
 title;description;url;image
 
 Todo App;A distraction-free web app to help you focus on creating and completing tasks in-line with global sustainability practices.;https://example.com/;1.png
-Portfolio Website;That's this website built entirely in Python to showcase coding projects and apps that I'm working on and towards.;https://github.com/Brendan36/My-Portfolio.git;2.png
+Portfolio Website;That's this website built entirely in Python to showcase coding projects and apps that I'm working on and towards.;https://github.com/Brendan36/Portfolio.git;2.png
 PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://example.com/;3.png
 PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;https://example.com/;4.png
 Good News;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;https://example.com/;5.png
