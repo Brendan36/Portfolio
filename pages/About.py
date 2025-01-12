@@ -1,3 +1,4 @@
+import base64
 import streamlit as st
 import pandas as pd
 from streamlit import empty
@@ -29,26 +30,7 @@ with col2:
     """
     st.write(content)
 
-# mission_statement = """
-# #     Mission Statement
-# #     """
-# st.header(mission_statement, divider='rainbow')
-#
-# blurb = """
-#     To inspire global collaboration so that we can all broaden our understanding of, and fuel the shifts that matter most.\n
-#
-#     Let’s create a better world together!\n
-#
-#     I intend to work with you to build **| be |** a suite of applications that will be able to:\n
-#
-#     1. Debunk the correlation between actual impact of the continuous commercialization of natural resources on the world and "sustainable" practices.\n
-#     2. Improve our understanding of the success stories of collectives and individuals who have extensively researched viable alternatives and have them implemented.\n
-#     3. Provide insights into the financial results of industries involved and by virtue, their impact while shining light on the environmental cost... \n
-#     4. Enable peer-to-peer collaboration and resource pooling to empower new community driven sustainable alternatives for the future. \n
-#     5. Demonstrate the power of collective action so we can easily quantify our impact and see the changes we are making in our world.\n
-#     """
-# #     **You might ask why... and my reason is that I've come to realise that we cannot rely on the current capitalism driven global industries to do right by us... It's simply not profitable for them.**
-# st.write(blurb)
+
 
 
 
@@ -58,7 +40,7 @@ with col2:
 #     """
 # st.header(content2)
 #
-# df = pd.read_csv('portfolio_data.csv', sep=';')  # read the csv file
+df = pd.read_csv('portfolio_data.csv', sep=';')  # read the csv file
 # # st.table(df)
 #
 # col5, empty_col, col6 = st.columns([1.5, 0.1, 1.5])
@@ -80,16 +62,7 @@ with col2:
 #         st.write(f"[Source Code]({row['url']})")
 #
 #
-# content3 = """
-#     Here are some of the ideas I have in mind for future projects:
-#     """
-# st.header(content3)
-# for i, row in df[20:].iterrows():
-#     st.subheader("", divider='rainbow')
-#     st.subheader(row['title'])
-#     st.write(row['description'])
-#     st.image("images/" + row['image'])
-# st.subheader("", divider='rainbow')
+
 #
 # dyk1 = """
 #     A commercially packed 1.5kg chicken requires 5kg of feed.\n
@@ -137,3 +110,49 @@ with col2:
 #     st.subheader("Did You Know..?")
 #     st.info(dyk1)
 
+audio_file_path = "C:/Users/Dell/PycharmProjects/app2-portfolio/We Deserve To Dream.mp3"
+with open(audio_file_path, "rb") as f:
+    audio_bytes = f.read()
+    audio_base64 = base64.b64encode(audio_bytes).decode()
+
+audio_player_base64 = f"""
+    <audio autoplay loop controls>
+        <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
+    </audio>
+"""
+st.markdown(audio_player_base64, unsafe_allow_html=True)
+st.write("**Artist: Xavier Rudd - We Deserve to Dream**")
+
+mission_statement = """
+    Mission
+    """
+st.header(mission_statement, divider='rainbow')
+
+blurb = """
+    To inspire global collaboration so that we can all broaden our understanding of, and fuel the shifts that matter most.\n
+
+    Let’s create a better world together!\n
+
+    I intend to work with you to build **| be |** a suite of applications that will be able to:\n
+
+    1. Debunk the correlation between actual impact of the continuous commercialization of natural resources on the world and "sustainable" practices.\n
+    2. Improve our understanding of the success stories of collectives and individuals who have extensively researched viable alternatives and have them implemented.\n
+    3. Provide insights into the financial results of industries involved and by virtue, their impact while shining light on the environmental cost.\n
+    4. Enable peer-to-peer collaboration and resource pooling while educating communities for support to empower new initiatives using sustainable alternatives to better the future. \n
+    5. Demonstrate the power of collective action so we can easily quantify our impact and see the changes we are making in our world while enabling the mechanism so we all have a say in our own future in pursuit of a better world utilizing the power of collective kindness.\n
+    """
+#     **You might ask why... and my reason is that I've come to realise that we cannot rely on the current capitalism driven global industries to do right by us... It's simply not profitable for them.**
+st.write(blurb)
+
+
+content3 = """
+    | be | think-tank items
+    """
+st.subheader("", divider='rainbow')
+st.header(content3)
+for i, row in df[20:].iterrows():
+    st.subheader("", divider='rainbow')
+    st.subheader(row['title'])
+    st.write(row['description'])
+    st.image("images/" + row['image'])
+st.subheader("", divider='rainbow')
