@@ -19,19 +19,19 @@ for i, row in df[20:].iterrows():
     st.image("images/" + row['image'])
 st.subheader("", divider='rainbow')
 
-st.header("IMO...", divider='rainbow')
-st.write("**MOST** commercial industries are not sustainable - Do you want to help us see past cute and often misleading labels?")
-st.write("**PEOPLE** should have access to alternative options - Do you intend to enable those options?")
-st.write("**ARE** we really doing the best we can? - Do you want to help us realise what we are doing?")
-st.write(
-    "**IGNORANT** is what we are if, we blindly trust and support commercial industries (many of them only perpetuate the problems) - Do you want to finance the destruction of the planet?")
-st.write("**TO** become sustainable, we need to inspire others to take action by doing it ourselves - Or do you want to maintain the blanket of cognitive ambivalence?")
-st.write("**CHANGE** is the only realistic option we have left - it's only too late when we're dead... - Do you want to wait?")
-st.write("**IN REALITY** we need to stop supporting industries that are intentionally misleading us - I want create and easier way to know that - Do you want to know?")
-
-st.subheader("", divider='rainbow')
-
-st.subheader("What will you do?")
+# st.header("IMO...", divider='rainbow')
+# st.write("**MOST** commercial industries are not sustainable - Do you want to help us see past cute and often misleading labels?")
+# st.write("**PEOPLE** should have access to alternative options - Do you intend to enable those options?")
+# st.write("**ARE** we really doing the best we can? - Do you want to help us realise what we are doing?")
+# st.write(
+#     "**IGNORANT** is what we are if, we blindly trust and support commercial industries (many of them only perpetuate the problems) - Do you want to finance the destruction of the planet?")
+# st.write("**TO** become sustainable, we need to inspire others to take action by doing it ourselves - Or do you want to maintain the blanket of cognitive ambivalence?")
+# st.write("**CHANGE** is the only realistic option we have left - it's only too late when we're dead... - Do you want to wait?")
+# st.write("**IN REALITY** we need to stop supporting industries that are intentionally misleading us - I want create and easier way to know that - Do you want to know?")
+#
+# st.subheader("", divider='rainbow')
+#
+# st.subheader("What will you do?")
 
 # # Audio player section
 # st.markdown(
@@ -74,18 +74,18 @@ st.subheader("What will you do?")
 # """
 # st.markdown(audio_player_html, unsafe_allow_html=True)
 
-audio_file_path = "C:/Users/Dell/PycharmProjects/app2-portfolio/We Deserve To Dream.mp3"
-with open(audio_file_path, "rb") as f:
-    audio_bytes = f.read()
-    audio_base64 = base64.b64encode(audio_bytes).decode()
-
-audio_player_base64 = f"""
-    <audio autoplay loop controls>
-        <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
-    </audio>
-"""
-st.markdown(audio_player_base64, unsafe_allow_html=True)
-st.write("**Artist: Xavier Rudd - We Deserve to Dream**")
+# audio_file_path = "C:/Users/Dell/PycharmProjects/app2-portfolio/We Deserve To Dream.mp3"
+# with open(audio_file_path, "rb") as f:
+#     audio_bytes = f.read()
+#     audio_base64 = base64.b64encode(audio_bytes).decode()
+#
+# audio_player_base64 = f"""
+#     <audio autoplay loop controls>
+#         <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
+#     </audio>
+# """
+# st.markdown(audio_player_base64, unsafe_allow_html=True)
+# st.write("**Artist: Xavier Rudd - We Deserve to Dream**")
 
 # Random Facts
 
