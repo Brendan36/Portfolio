@@ -110,18 +110,18 @@ df = pd.read_csv('portfolio_data.csv', sep=';')  # read the csv file
 #     st.subheader("Did You Know..?")
 #     st.info(dyk1)
 
-audio_file_path = "C:/Users/Dell/PycharmProjects/app2-portfolio/We Deserve To Dream.mp3"
-with open(audio_file_path, "rb") as f:
-    audio_bytes = f.read()
-    audio_base64 = base64.b64encode(audio_bytes).decode()
-
-audio_player_base64 = f"""
-    <audio autoplay loop controls>
-        <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
-    </audio>
-"""
-st.markdown(audio_player_base64, unsafe_allow_html=True)
-st.write("**Artist: Xavier Rudd - We Deserve to Dream**")
+# audio_file_path = "C:/Users/Dell/PycharmProjects/app2-portfolio/We Deserve To Dream.mp3"
+# with open(audio_file_path, "rb") as f:
+#     audio_bytes = f.read()
+#     audio_base64 = base64.b64encode(audio_bytes).decode()
+#
+# audio_player_base64 = f"""
+#     <audio autoplay loop controls>
+#         <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
+#     </audio>
+# """
+# st.markdown(audio_player_base64, unsafe_allow_html=True)
+# st.write("**Artist: Xavier Rudd - We Deserve to Dream**")
 
 mission_statement = """
     Mission
